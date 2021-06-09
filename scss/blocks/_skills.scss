@@ -1,0 +1,89 @@
+.skills {
+    padding: 100px 16px;
+    background: #fff;
+
+    @include adaptive-mw-767 {
+        padding: 60px 16px;
+    }
+
+    
+
+
+	&__wrapper {
+        @include flex-center-jc-sbw();
+
+        @include adaptive-mw-480 {
+            flex-direction: column;
+            align-items: stretch;
+        }
+    }
+
+	&__list {
+        flex: 1 1 50%;
+        margin: 0 75px 0 0;
+
+        @include adaptive-mw-767 {
+            margin: 0 25px 0 0;
+        }
+
+        @include adaptive-mw-480 {
+            flex: 1 1 100%;
+            margin: 0;
+        }
+    }
+
+	&__title {
+
+    }
+
+	&__items {
+        margin: 50px 0 0 0;
+
+        @include adaptive-mw-480 {
+            margin: 20px 0 0 0;
+        }
+    }
+
+	&__item {
+        margin: 26px 0 0 0;
+    }
+
+	&__name {
+        @include fsize-fweight-lheight(16px, 400, 25px);
+        color: $text-color;
+    }
+
+	&__progress {
+        position: relative;
+        height: 4px;
+        background: #C4C4C4;
+        margin: 13px 0 0 0;
+    }
+
+    &__progress::before {
+        content: '';
+        position: absolute;
+        height: 4px;
+        width: 80%;
+        background: $dark-blue-color;
+    }
+
+	&__avatar {
+        flex: 1 1 50%;
+        margin: 0 0 0 75px;
+        @include adaptive-mw-767 {
+            margin: 0 0 0 25px;
+        }
+
+        @include adaptive-mw-480 {
+            flex: 1 1 100%;
+            margin: 40px 0 0 0;
+        }
+    }
+
+    &__photo {
+        max-width: 555px;
+        width: 100%;
+        height: auto;
+    }
+}

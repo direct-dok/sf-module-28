@@ -1,0 +1,21 @@
+// Сброс стилей по умолчанию
+@import 'normalize';
+// Подключаем шрифты
+@import 'font';
+// Подключаем переменные
+@import 'variables';
+// Подключаем миксины
+@import 'mixins';
+// Подключаем блоки
+@import 'blocks/header';
+@import 'blocks/service';
+@import 'blocks/about';
+@import 'blocks/project';
+@import 'blocks/skills';
+@import 'blocks/video';
+@import 'blocks/cards';
+@import 'blocks/brand';
+@import 'blocks/contact';
+@import 'blocks/footer';
+// Общие стили
+@import 'general';

@@ -1,0 +1,65 @@
+.video {
+    padding: 100px 16px;
+
+    @include adaptive-mw-767 {
+        padding: 60px 16px;
+    }
+
+	&__wrapper {
+
+    }
+
+	&__header {
+        max-width: $width-text-block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+	&__title {
+
+    }
+
+	&__text {
+        margin: 40px 0 0 0;
+    }
+
+	&__body {
+        margin: 50px 0 0 0;
+    }
+
+	&__player {
+        position: relative;
+        max-width: 1110px;
+        margin: 0 auto;
+        padding-bottom: 52%;
+        background: url(./../img/video.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+	&__play-icon {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        top: calc(50% - 50px);
+        left: calc(50% - 50px);
+
+        svg {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @include adaptive-mw-480 {
+            width: 60px;
+            height: 60px;
+            top: calc(50% - 30px);
+            left: calc(50% - 30px);
+        }
+
+    }
+
+    &__play-icon:hover {
+        cursor: pointer;
+    }
+}

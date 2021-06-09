@@ -1,0 +1,23 @@
+.about {
+    background: #fff;
+    padding: 100px 0;
+
+    @include adaptive-mw-1024 {
+        padding: 60px 16px;
+    }
+
+	&__wrapper {
+        max-width: $width-text-block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+	&__title {
+
+    }
+
+	&__text {
+        margin: 40px 0 0 0;
+    }
+
+}

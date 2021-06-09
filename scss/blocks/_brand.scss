@@ -1,0 +1,35 @@
+.brand {
+    padding: 100px 16px;
+    background: #fff;
+
+    @include adaptive-mw-767 {
+        padding: 60px 16px;
+    }
+
+	&__wrapper {
+
+    }
+
+	&__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 -15px;
+
+        @include adaptive-mw-767 {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+	&__item {
+        margin: 0 15px;
+    }
+
+	&__img {
+        max-width: 255px;
+        width: 100%;
+        height: auto;
+    }
+
+}

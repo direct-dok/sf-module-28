@@ -1,0 +1,111 @@
+.contact {
+    padding: 100px 16px;
+
+    @include adaptive-mw-767 {
+        padding: 60px 16px;
+    }
+
+	&__wrapper {
+
+    }
+
+	&__header {
+        max-width: $width-text-block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+	&__title {
+
+    }
+
+	&__text {
+        margin: 40px 0 0 0;
+    }
+
+	&__body {
+        max-width: $width-text-block;
+        margin: 50px auto 0;
+    }
+
+	&__form {
+
+    }
+
+	&__fields {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 -15px;
+
+        @include adaptive-mw-480 {
+            flex-direction: column;
+        }
+    }
+
+    &__input-wrapper {
+        margin: 0 15px;
+
+        &--name {
+            flex: 1 1 33.333%;
+        }
+
+        &--email {
+            flex: 1 1 33.333%;
+
+            @include adaptive-mw-480 {
+                margin: 20px 15px 0;
+            }
+        }
+
+        &--message {
+            flex: 1 1 100%;
+            margin: 20px 15px 0;
+        }
+    }
+
+	&__input {
+        display: block;
+        width: 100%;
+        border: none;
+
+        &::placeholder {
+            font-family: "Roboto", sans-serif;
+            @include fsize-fweight-lheight(14px, 400, 23px);
+            color: #5F5D5D;
+        }
+
+
+		&--name, 
+        &--email {
+           height: 50px;
+           padding: 20px;
+        }
+
+		&--message {
+            height: 175px;
+            padding: 20px;
+        }
+
+	}
+	&__button-send {
+        font-family: "Roboto", sans-serif;
+        @include fsize-fweight-lheight(14px, 400, 23px);
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        color: #fff;
+        display: block;
+        height: 55px;
+        width: 190px;
+        margin: 50px auto 0;
+        background: $dark-blue-color;
+        border: none;
+        transition: .3s;
+    }
+
+    &__button-send:hover {
+        background: $hover-button-blue;
+        cursor: pointer;
+    }
+
+}

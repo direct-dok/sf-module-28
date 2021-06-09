@@ -1,0 +1,52 @@
+.project {
+    padding: 100px 16px;
+    background: $dark-blue-color;
+
+
+    @include adaptive-mw-767 {
+        padding: 60px 16px;
+    }
+
+	&__wrapper {
+
+    }
+
+	&__items {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(141px, auto));
+        grid-gap: 49px;
+
+        @include adaptive-mw-480 {
+            align-items: center;
+            grid-template-columns: 100%;
+        }
+    }
+
+	&__item {
+        display: flex;
+
+        @include adaptive-mw-480 {
+            align-self: center;
+            justify-self: center;
+        }
+    }
+
+	&__img {
+
+    }
+
+	&__text {
+        margin: 0 0 0 20px;
+    }
+
+	&__number {
+        @include fsize-fweight-lheight(21px, 500, 25px);
+        color: #fff;
+    }
+
+	&__description {
+        @include fsize-fweight-lheight(16px, 400, 25px);
+        color: #fff;
+    }
+
+}

@@ -1,0 +1,30 @@
+@mixin flex-center-jc-sbw() {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin fsize-fweight-lheight($size, $weight, $lheight) {
+    line-height: $lheight;
+    font: {
+        size: $size;
+        weight: $weight;
+    }
+}
+
+
+@mixin adaptive-mw-1280 {
+    @media (max-width: 1280px) { @content; }
+}
+
+@mixin adaptive-mw-1024 {
+    @media (max-width: 1024px) { @content; }
+}
+
+@mixin adaptive-mw-767 {
+    @media (max-width: 767px) { @content; }
+}
+
+@mixin adaptive-mw-480 {
+    @media (max-width: 480px) { @content; }
+}
